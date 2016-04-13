@@ -1,0 +1,217 @@
+Script started on Wed Apr 13 08:36:59 2016
+[?1034hbash-3.2$ python 3 interest.py
+python: can't open file '3': [Errno 2] No such file or directory
+bash-3.2$ python 3 interest.py[1P
+What is your initial balance?1000
+Traceback (most recent call last):
+  File "interest.py", line 9, in <module>
+    prct = float(aint)
+ValueError: could not convert string to float: 'What is your Annual Interest %?'
+bash-3.2$ 6.0
+bash: 6.0: command not found
+bash-3.2$ 6.0python3 interest.py
+What is your initial balance?1000
+What is your Annual Interest %?6.0
+Number of years?5
+Traceback (most recent call last):
+  File "interest.py", line 23, in <module>
+    totval = ibalf(1 + (dec/12))^(12*inum)
+TypeError: 'float' object is not callable
+bash-3.2$ python3 interest.py
+What is your initial balance?1000
+What is your Annual Interest %?6.0
+Number of years?5
+Traceback (most recent call last):
+  File "interest.py", line 23, in <module>
+    totval = ibalf * (1 + (dec/12))^(12*inum)
+TypeError: unsupported operand type(s) for ^: 'float' and 'int'
+bash-3.2$ python3 interest.py
+What is your initial balance?1000
+What is your Annual Interest %?6.0
+Number of years?5
+1348.8501525493075
+bash-3.2$ python3 interest.py
+What is your initial balance?1000
+What is your Annual Interest %?3
+Number of years?10
+5.65979942427e-313
+1349.3535471908247
+bash-3.2$ python3 interest.py
+What is your initial balance?1000
+What is your Annual Interest %?3
+Number of years?10
+349.35354719082466
+1349.3535471908247
+bash-3.2$ python3 interest.py
+What is your initial balance?1000
+What is your Annual Interest %?3
+Number of years?10
+349
+1349.3535471908247
+bash-3.2$ python3 interest.py
+What is your initial balance?1000
+What is your Annual Interest %?3
+Number of years?10
+349.35
+1349.3535471908247
+bash-3.2$ python3 interest.py
+Initial balance: 1000
+Annual Interest %: 6
+Years: 5
+Interest earned in 5years: $348.85
+Total value after 5 years: $1348.85
+bash-3.2$ python3 interest.py
+Initial balance: 1000
+Annual Interest %: 6
+Years: 5
+Interest earned in 5 years: $348.85
+Total value after 5 years: $1348.85
+bash-3.2$ python3
+Python 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import math
+>>> math.sqrt(3)
+1.7320508075688772
+>>> sqrt3 - [K= math.sqrt(3)
+>>> print(sqrt3)
+1.7320508075688772
+>>> sqrt3**2
+2.9999999999999996
+>>> round(sqrr[Kt3**2),2)([1@(s
+3.0
+>>> 5.1-2.6
+2.4999999999999996
+>>> var = 3
+>>> type(var)
+<class 'int'>
+>>> var = 'Hello'
+>>> type(var)
+<class 'str'>
+>>> msg = "hello world"w[Po[1@Wo[Pe[1@He
+>>> msg = msg.upper()
+>>> print(msg)
+HELLO WORLD
+>>> msg.lower()
+'hello world'
+>>> msg=msg.lower()
+>>> print()m)s)g)
+hello world
+>>> "Hello World".swapcade()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'swapcade'
+>>> "Hello World".swapcade()de()[Kse()
+'hELLO wORLD'
+>>> import turtle
+>>> windor[Kw = turtle.Screen()
+>>> my_turtle = turtle.Turtle()
+>>> type(my_turtle)
+<class 'turtle.Turtle'>
+>>> my_turtle.forward(100)
+>>> my_turtle.left(12)
+>>> my_turtle.forward(80)
+>>> my_turtle.forward(80)80)[K80)[K80)[K80)[K80)[K80)[K80)[K80)[Kc80)o80)l80)o80)r80)(80)80)[K)[K")f)u)s)c)h)i)a)")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/turtle.py", line 2216, in color
+    pcolor = self._colorstr(pcolor)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/turtle.py", line 2696, in _colorstr
+    return self.screen._colorstr(args)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/turtle.py", line 1158, in _colorstr
+    raise TurtleGraphicsError("bad color string: %s" % str(color))
+turtle.TurtleGraphicsError: bad color string: fuschia
+>>> my_turtle.color("fuschia")")[K")[K")[K")[K")[K")[K")[K#")f")f")0")0")8")0")
+>>> my_turtle.color("#ff0080")[22Gfuschia")[15Gforward(80)[K880)[K(80)80)[K20)00)
+>>> my_turtle.forward(200)d[P([P([P([P([P([P([P([1@l([1@e([1@f([1@t((20)[K120)
+>>> my_turtle.left(120)[15Gforward(200)
+>>> my_turtle.forward(200)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(200)
+>>> my_turtle.forward(200)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(200)[15Gleft(120)[K[P([P([P([P([1@r([1@i([1@g([1@h([1@t((120)[K20)[K90)0)[K80)
+>>> my_turtle.right(80)[15Gleft(120)[15Gforward(200)[15Gleft(120)[K[15Gforward(200)[15Gleft(120)[K[15Gforward(200)[15Gcolor("#ff0080")0")[K0")[K")[K")[Kd")e")0")0")
+>>> my_turtle.color("#ffde00")[15Gright(80)[K[15Gleft(120)[15Gforward(200)
+>>> my_turtle.forward(200)[15Gcolor("#ffde00")[15Gright(80)[K[15Gleft(120)
+>>> my_turtle.left(120)[15Gforward(200)
+>>> my_turtle.forward(200)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(200)
+>>> my_turtle.forward(200)[15Gleft(120)[K[15Gforward(200)[15Gleft(120)[K[15Gforward(200)[15Gcolor("#ffde00")")[K")[K")[K")[K")[K")[K6")5")9")9")f")f")
+>>> my_turtle.color("#6599ff")[15Gforward(200)[K
+>>> my_turtle.forward(200)[15Gcolor("#6599ff")[15Gforward(200)[K[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(200)
+>>> my_turtle.forward(200)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(200)[15Gleft(120)[K[15Gforward(200)
+>>> my_turtle.forward(200)[K[K[K[K[K[K[K[K[K[K[K[Kshape("turtle")
+>>> my_turtle.shape("turtle")[15Gforward(200)[K[15Gleft(120)[K[15Gforward(200)[15Gleft(120)[K[15Gforward(200)[15Gcolor("#6599ff")")[K")[K")[K")[K")[K")[K0")9")7")0")5")4")
+>>> my_turtle.color("#097054")[15Gshape("turtle")[K[15Gforward(200)[K[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gcolor("#097054")[15Gshape("turtle")[K[15Gforward(200)[K[15Gleft(120)[K[15Gforward(200)[15Gleft(120)[K[15Gforward(200)[15Gcolor("#6599ff")[15Gforward(200)[K[15Gleft(120)[K[15Gforward(200)[15Gleft(120)[K[15Gforward(200)[15Gcolor("#ffde00")[15Gright(80)[K[15Gleft(120)[15Gright(80)
+>>> my_turtle.right(80)(80)[K(80)[K(80)[K(80)[K(80)[Kl(80)e(80)f(80)t(80)[5G[Kmy_turtle.right(80)[15Gleft(120)0)[K
+>>> my_turtle.left(10)[15Gright(80)[15Gleft(120)[15Gcolor("#097054")[15Gshape("turtle")[K[15Gforward(200)[K200)[K3200)200)[K00)[K(00)300)
+>>> x=3
+>>> y=4
+>>> x>y
+False
+>>> x<y
+True
+>>> "cat" < "dog"
+True
+>>> "cat" < "armadillo"
+False
+>>> "cat" < "armadillo"[14Gdog"[K[5Gx<y[K>yy=4x=3my_turtle.forward(300)[15Gleft(10)[K[15Gright(80)[15Gleft(120)
+>>> my_turtle.left(120)[5G"cat" < "armadillo"[14Gdog"[K[5Gx<y[K>yy=4x=3my_turtle.forward(300)0)[K
+>>> my_turtle.forward(30)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(30)
+>>> my_turtle.forward(30)[15Gleft(120)[K[15Gforward(30)
+>>> my_turtle.forward(30)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(30)
+>>> my_turtle.forward(30)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(30)
+>>> my_turtle.forward(30)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(30)[15Gleft(120)[K[15Gforward(30)
+>>> my_turtle.forward(30)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(30)
+>>> my_turtle.forward(30)
+>>> my_turtle.forward(30)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(30)
+>>> my_turtle.forward(30)[15Gleft(120)[K
+>>> my_turtle.left(120)[15Gforward(30)
+>>> ^D
+bash-3.2$ python3 decision.py
+Temperature? 50
+wear a jacket
+have a nice day!
+bash-3.2$ python3 decision.py
+  File "decision.py", line 10
+    else:
+       ^
+SyntaxError: invalid syntax
+bash-3.2$ python3 decision.py
+Temperature? 70
+Wear a t-shirt
+have a nice day!
+bash-3.2$ python3 decision.py
+Temperature? 90
+Wear a t-shirt
+have a nice day!
+bash-3.2$ python3 decision.py
+Temperature? 94
+Wear sunscreen
+have a nice day!
+bash-3.2$ python3 decision.py
+Temperature? 90
+Wear sunscreen
+have a nice day!
+bash-3.2$ python3 decision.py
+Temperature? 72
+Perfect weather!
+have a nice day!
+bash-3.2$ python3
+Python 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> booll[K[K[K[K1 = x[K3>4
+>>> b2=4<3
+>>> qui[K[K[K^D
+bash-3.2$ exit
+
+Script done on Wed Apr 13 10:19:55 2016
